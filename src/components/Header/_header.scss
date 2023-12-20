@@ -1,0 +1,152 @@
+header {
+    background-color: #F0EFE9;
+
+    .container {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr auto;
+        grid-template-areas: "logo bars"
+            "logo menu";
+
+        .btn-menubars {
+            grid-area: bars;
+            border: none;
+            font-size: 25px;
+            background-color: transparent;
+
+            @media (min-width: 992px) {
+                display: none;
+            }
+        }
+
+        .logotype {
+            grid-area: logo;
+        }
+
+        .contactinformation-bar {
+            grid-area: cib;
+            align-items: center;
+            display: none;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        .socialmedia-bar {
+            grid-area: social;
+            align-items: center;
+            display: none;
+
+            a {
+                color: #191919;
+                font-size: 1.2rem;
+                margin-left: 12px;
+
+                &:hover {
+                    color: #7c7c7c;
+                }
+            }
+        }
+
+        .menu {
+            grid-area: menu;
+            align-items: center;
+            justify-content: space-between;
+            display: none;
+            margin-left: 30px;
+            border-top: 1px solid #DAD9D3;
+
+            .menubar {
+                font-size: 15px;
+                font-weight: 400;
+                display: none;
+
+                a {
+                    color: #191919;
+                    text-decoration: none;
+                    position: relative;
+
+                    &.active {
+                        font-weight: 500;
+                    }
+
+                    &.active::after,
+                    &:hover::after {
+                        content: '';
+                        position: absolute;
+                        font-weight: 500;
+                        height: 2px;
+                        width: 15px;
+                        background-color: #191919;
+                        left: 50%;
+                        bottom: -3px;
+                        transform: translate(calc(50% - 15px));
+                    }
+                }
+            }
+        }
+
+        .login {
+            grid-area: login;
+        }
+
+        @media (min-width: 992px) {
+            grid-template-columns: auto 1fr auto;
+            grid-template-areas: "logo cib social"
+                "logo menu menu";
+
+            .contactinformation-bar {
+                display: flex;
+                align-items: center;
+                padding-top: 15px;
+                margin-left: 12px;
+
+
+                .contact-box {
+                    border-right: 1px solid #DAD9D3;
+                    padding-right: 10px;
+                    padding-left: 20px;
+
+                    i {
+                        margin-right: 5px;
+                        font-size: 1.2em;
+                    }
+
+                    &.last {
+                        border: none;
+
+                        @media (max-width: 1200px) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .socialmedia-bar {
+                display: flex;
+                align-items: center;
+            }
+
+            .menu {
+                align-items: center;
+                display: flex;
+                padding-top: 30px;
+                padding-bottom: 5px;
+
+                .menubar {
+                    display: flex;
+                    gap: 35px;
+                }
+            }
+
+        }
+    }
+}
+
+#pageNotFound {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+}

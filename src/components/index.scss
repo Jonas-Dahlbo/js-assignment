@@ -1,0 +1,179 @@
+@import "./Header/header.scss";
+@import "./Showcase/showcase.scss";
+@import "./Partners/partners.scss";
+@import "./Features/features.scss";
+@import "./About/about.scss";
+@import "./Services/services.scss";
+@import "./WhyUs/whyUs.scss";
+@import "./ProjectsCases/projectsCases.scss";
+@import "./OurTeam/ourTeam.scss";
+@import "./Testimonials/testimonials.scss";
+@import "./Articles/articles.scss";
+@import "./Newsletter/newsletter.scss";
+@import "./Footer/footer.scss";
+@import "./CopyrightBar/CopyrightBar.scss";
+@import "./LetsConnect/letsConnect.scss";
+@import "./ContactUs/contactUs.scss";
+@import "./MessageUs/messageUs.scss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap');
+
+html,
+body {
+    color: #191919;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    h1,
+    h2,
+    h3 {
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+
+        @media (min-width: 992px) {
+            font-size: 22px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 16px;
+    }
+}
+
+.container {
+    padding-left: 30px;
+
+    @media (min-width: 992px) {
+        padding-left: 90px;
+        padding-right: 60px;
+    }
+}
+
+.wrapper-grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+.section-title {
+
+    p {
+        color: #F94D1C;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    h2 {
+        padding-bottom: 20px;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    @media (min-width: 992px) {
+
+        p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 35pt;
+            margin-bottom: 22px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+
+        h2 {
+            font-size: 45px;
+        }
+    }
+}
+
+.btn-yellow {
+    background-color: #F9D783;
+    border: 1px solid #F9D783;
+    color: #161718;
+    text-decoration: none;
+    padding: 12px 25px 11px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+
+    i {
+        margin-left: 8px;
+        font-size: 0.9em;
+    }
+
+    &:hover {
+        background-color: #191919;
+        border: 1px solid #191919;
+        color: #F0EFE9;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 16px;
+    }
+}
+
+.btn-transparent {
+    background-color: #F0EFE9;
+    border: 1px solid #191919;
+    color: #171717;
+    text-decoration: none;
+    padding: 12px 25px 11px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+
+    i {
+        margin-left: 8px;
+        font-size: 0.9em;
+    }
+
+    &:hover {
+        background-color: #191919;
+        border: 1px solid #191919;
+        color: #F0EFE9;
+    }
+}
+
+.btn-black {
+    background-color: #191919;
+    border: 1px solid #191919;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 25px 11px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+
+    i {
+        margin-left: 8px;
+        font-size: 0.9em;
+    }
+
+    &:hover {
+        background-color: #FFFFFF;
+        border: 1px solid #191919;
+        color: #191919;
+    }
+}
+
+.center-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    width: 100%;
+    height: auto;
+}

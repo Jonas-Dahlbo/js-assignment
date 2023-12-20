@@ -1,0 +1,88 @@
+.features {
+
+    .container {
+        display: block;
+        padding-top: 20px;
+        align-items: center;
+        border: 1px solid #CFCFCF;
+
+        .section-title {
+
+            a {
+                display: block;
+                text-align: center;
+                margin-bottom: 20px;
+                margin-right: 50px;
+            }
+
+            @media (min-width: 992px) {
+                margin-right: 100px;
+
+                a {
+                    margin-bottom: 200px;
+                }
+
+            }
+
+            @media (min-width: 1200px) {
+
+                h2 {
+                    padding-right: 70px;
+                }
+            }
+        }
+
+        .features-box {
+
+            .feature-article {
+                text-decoration: none;
+                color: #191919;
+
+                h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-top: 10px;
+                }
+
+                p {
+                    color: #5E5E5E;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                }
+            }
+
+            @media (min-width: 992px) {
+                .feature-article {
+                    margin-bottom: 40px;
+                    margin-right: 100px;
+
+                    h3 {
+                        margin-top: 30px;
+                        margin-bottom: 20px;
+                        font-size: 22px;
+                    }
+
+                }
+            }
+        }
+
+        @media (min-width: 992px) {
+            display: flex;
+
+            .section-title {
+                flex: 1;
+                margin-top: 70px
+            }
+
+            .features-box {
+                flex: 1.2;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin-top: 75px;
+            }
+        }
+    }
+}

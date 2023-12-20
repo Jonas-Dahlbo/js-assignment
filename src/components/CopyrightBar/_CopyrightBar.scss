@@ -1,0 +1,28 @@
+.copyright-bar {
+    background-color: #0E1021;
+    border-top: 1px solid #3D3F4C;
+    color: #c3c3c7;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 25px;
+
+        .socialmedia-bar {
+            display: flex;
+            align-items: center;
+
+            a {
+                color: #FFFFFF;
+                font-size: 1.2rem;
+                margin-left: 12px;
+
+                &:hover {
+                    color: #c3c3c7;
+                }
+            }
+        }
+    }
+}

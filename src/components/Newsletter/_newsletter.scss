@@ -1,0 +1,98 @@
+.newsletter {
+    background-color: #F0EFE9;
+    position: relative;
+    z-index: 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    @media (min-width: 992px) {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    img {
+        position: absolute;
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+            right: 0;
+            bottom: 25%;
+            z-index: -1;
+        }
+    }
+
+    .container {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+
+        .newsletter-form {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+
+            form {
+                margin-right: 20px;
+                margin-bottom: 20px;
+
+                input {
+                    color: #8C8C8C;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16;
+                    font-weight: 400;
+                    width: 90%;
+                    margin-bottom: 8px;
+                    padding: 12px 25px 11px;
+                    border-radius: 25px;
+                    border: none;
+                }
+
+                button {
+                    width: 90%;
+                }
+            }
+        }
+
+        @media (min-width: 992px) {
+            display: flex;
+            align-items: center;
+
+            .section-title {
+
+                h2 {
+                    margin-top: 20px;
+                    font-size: 30px;
+                }
+            }
+
+            .newsletter-form {
+
+                form {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+
+                    input {
+                        width: auto;
+                        margin-bottom: 0;
+                    }
+
+                    button {
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .section-title {
+                margin-right: 85px;
+
+                h2 {
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+}

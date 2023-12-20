@@ -1,0 +1,170 @@
+.about {
+    padding-top: 30px;
+
+    @media (min-width: 992px) {
+        padding-top: 70px;
+    }
+
+    .container {
+        align-items: center;
+        padding-left: 0;
+        padding-top: 20px;
+
+        .founder {
+            position: relative;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .bluebox {
+                position: absolute;
+                margin-left: 10px;
+                bottom: 10%;
+                background-color: #BEEBFF;
+                border: 1px solid #85C5F8;
+                width: 70%;
+                height: auto;
+
+                h4 {
+                    color: #191919;
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+
+                span {
+                    color: #F94D1C;
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-style: italic;
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .section-title {
+            margin-top: 20px;
+            padding-left: 30px;
+            padding-bottom: 30px;
+            align-items: center;
+
+            .company-paragraph {
+                color: #5E5E5E;
+                font-size: 14px;
+                font-weight: 400;
+                padding-bottom: 20px;
+            }
+
+            .btn-black {
+                margin-right: 10px;
+                display: block;
+                align-items: center;
+                text-align: center;
+            }
+
+            .video-btn {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+
+                a {
+                    font-size: 16px;
+                    margin-right: 10px;
+                    color: #191919;
+                    text-decoration: none;
+
+                    img {
+                        margin-right: 10px;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+
+                        img {
+                            transition-duration: 0.15s;
+                            transition-timing-function: ease-in-out;
+                            filter: invert(0.40);
+                        }
+                    }
+                }
+
+            }
+        }
+
+        @media (min-width: 992px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+
+            .founder {
+                padding-right: 70px;
+            }
+
+            @media (min-width: 1200px) {
+                .founder {
+                    margin-right: 60px;
+
+                    img {
+                        all: initial;
+                    }
+
+                    .bluebox {
+                        width: 52.5%;
+                        bottom: 10%;
+                        padding: 30px 30px 40px 20px;
+                    }
+                }
+
+                .section-title {
+                    margin-bottom: 45px;
+                    margin-left: 35px;
+                    margin-right: 20px;
+
+                    h2 {
+                        margin-right: 0px;
+                    }
+
+                    p {
+                        padding-bottom: 30px;
+                    }
+
+                    .company-paragraph {
+                        font-size: 16px;
+                    }
+
+                    .aboutcompany-btns {
+                        margin-top: 60px;
+
+                        .btn-black {
+                            display: inline;
+                            margin-right: 40px;
+                        }
+
+                        .video-btn {
+                            text-align: left;
+                            justify-content: left;
+
+                            a {
+                                img {
+                                    margin-right: 10px;
+                                }
+                            }
+
+                            @media (min-width: 1400px) {
+                                display: inline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

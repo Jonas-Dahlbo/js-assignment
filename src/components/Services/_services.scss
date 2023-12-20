@@ -1,0 +1,129 @@
+.our-services {
+    background-color: #F0EFE9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 0;
+
+    .container {
+
+        .wavy-line {
+            display: none;
+        }
+
+
+        .service-container {
+            padding-bottom: 20px;
+
+            .service-box {
+                background-color: #FFFFFF;
+                text-align: center;
+                padding-top: 20px;
+                padding-right: 20px;
+                padding-left: 20px;
+                padding-bottom: 10px;
+                margin: 20px 40px 20px;
+                position: relative;
+
+                p {
+                    color: #5E5E5E;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+                img {
+                    width: 40px;
+                    height: auto;
+                }
+
+                &:hover {
+                    background-color: #F9D783;
+                    transition-duration: 0.2s;
+                    transition-timing-function: ease-in-out;
+                    cursor: pointer;
+
+                    img {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            @media (min-width: 768px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 50px;
+
+                .service-box {
+                    padding-right: 0;
+                    padding-left: 0;
+                    margin: 0;
+                }
+            }
+
+            .service-box::after {
+                content: '';
+                width: 30px;
+                height: 2px;
+                background: #191919;
+                position: absolute;
+                top: 10px;
+                left: 25px;
+
+                @media (min-width: 992px) {
+                    width: 40px;
+                    top: 40px;
+                }
+            }
+        }
+
+        @media (min-width: 992px) {
+            padding-top: 70px;
+            padding-bottom: 70px;
+
+            .wavy-line {
+                display: block;
+                transform: scaleX(-1);
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+
+            .service-container {
+                display: flex;
+                gap: 15px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+
+                .service-box {
+                    text-align: start;
+                    padding: 90px 25px 80px;
+                    position: relative;
+
+                    h3 {
+                        font-size: 22px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        padding-bottom: 40px;
+                    }
+
+                    img {
+                        all: initial;
+                        position: absolute;
+                        right: 25px;
+                        bottom: 35px
+                    }
+                }
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .section-title {
+                margin-right: 60%;
+            }
+        }
+    }
+}
